@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Lista peliculas</title>
+    <style type="text/css">
+        header {
+
+            padding: 20px 50px;
+
+        }
+        #listaEmpleados {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+        background-color: #fff;
+        color: #444;
+        }    
+        .item {
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+        padding: 0px 10px;
+max-width: 235px;
+        }
+        .item img {
+        max-height: 300px;
+
+        }
+        #container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+        grid-gap: 2rem;
+        height: 0px;
+        padding: 20px 50px;
+        }
+        #specs {
+
+        display: flex;
+        flex-flow: column;
+        }
+        .panel-body {
+          background-color: #fff;
+          position: relative;
+          padding: 40px 0px;
+        }
+    </style>
+  </head>
+  <body>
+  
+<header>
+  <h1>Peliculas</h1>
+  <form>
+  <div class="form-group row">
+      <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="nombrePeli" placeholder="Nombre de la película">
+    </div>
+    <button id="btnBuscar" type="button" onclick="buscarPeli(nombrePeli.value)" class="btn btn-outline-primary">Buscar</button>
+  </div>
+</form>
+ </header>
+  <div id="container">
+<!--     <img src="https://m.media-amazon.com/images/M/MV5BNmFiYmJmN2QtNWQwMi00MzliLThiOWMtZjQxNGRhZTQ1MjgyXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg" />
+    <div id="specs">
+    <h4>"Kill Bill: Vol. 2"</h4>
+    <span id="actors">Actors: "Vivica A. Fox, Ambrosia Kelley, Michael Parks, James Parks"</span>
+​    <span id="country">Country: "USA"</span>
+​    <span id="date">DVD: "10 Aug 2004"</span>
+​    <span id="director">Director: "Quentin Tarantino"</span>
+​    <span id="genre">Genre: "Action, Crime, Thriller"</span>
+​    <span id="plot">Plot: "The Bride continues her quest of vengeance against her former boss and lover Bill, the reclusive bouncer Budd, and the treacherous, one-eyed Elle."</span>
+​ -->
+    </div>
+  </div>
+  <div class="panel-body">
+    <ul id="listaEmpleados" class="table table-striped">
+    </ul>
+  </div>
+</div>
+
+
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+	<script src="app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
